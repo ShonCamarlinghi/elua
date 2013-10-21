@@ -41,6 +41,7 @@ SHELL_FUNC( shell_adv_rm );
 SHELL_FUNC( shell_recv );
 SHELL_FUNC( shell_help );
 SHELL_FUNC( shell_cat );
+SHELL_FUNC( shell_mem );
 SHELL_FUNC( shell_lua );
 SHELL_FUNC( shell_ver );
 SHELL_FUNC( shell_mkdir );
@@ -212,6 +213,8 @@ static const SHELL_COMMAND shell_commands[] =
   { "dir", shell_ls },
   { "cat", shell_cat },
   { "type", shell_cat },
+  { "mem", shell_mem },
+  { "md", shell_mem },
   { "cp", shell_cp },
   { "wofmt", shell_wofmt },
   { "mkdir", shell_mkdir },
